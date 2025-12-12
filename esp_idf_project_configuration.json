@@ -1,0 +1,26 @@
+{
+  "ESP32": {
+    "build": {
+      "compileArgs": [],
+      "ninjaArgs": [],
+      "buildDirectoryPath": "/Users/neo/ESProjects/ESP32-BasicSys/build",
+      "sdkconfigDefaults": [],
+      "sdkconfigFilePath": "/Users/neo/ESProjects/ESP32-BasicSys/sdkconfig"
+    },
+    "env": {},
+    "flashBaudRate": "115200",
+    "idfTarget": "esp32",
+    "monitorBaudRate": "115200",
+    "openOCD": {
+      "debugLevel": 2,
+      "configs": [],
+      "args": []
+    },
+    "tasks": {
+      "preBuild": "",
+      "preFlash": "",
+      "postBuild": "",
+      "postFlash": ""
+    }
+  }
+}

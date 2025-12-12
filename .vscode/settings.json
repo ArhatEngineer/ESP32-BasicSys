@@ -4,5 +4,6 @@
         "freertos.h": "c",
         "gpio.h": "c",
         "spi_master.h": "c"
-    }
+    },
+    "idf.pythonInstallPath": "/Users/neo/anaconda3/bin/python"
 }
