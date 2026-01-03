@@ -1,2 +1,2 @@
-source /Users/neo/ESProjects/ESP32-BasicSys/build/gdbinit/symbols
-source /Users/neo/ESProjects/ESP32-BasicSys/build/gdbinit/connect
+source /home/neo/EMSysProjects/ESP32-BasicSys/build/gdbinit/symbols
+source /home/neo/EMSysProjects/ESP32-BasicSys/build/gdbinit/connect

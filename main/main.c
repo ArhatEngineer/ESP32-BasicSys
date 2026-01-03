@@ -13,7 +13,7 @@
 
 
 void app_main(void) {
-i2c_config_TEST();
+//i2c_config_TEST();
 //i2c_master_init();
 //newButton(); 
 }

@@ -12,7 +12,7 @@
 idf_component_register(
     SRCS
         "main.c"
-        "screenCont.c"
+        "ButtonBuzz.c"
         "i2cConfig.c"
     INCLUDE_DIRS
         "."

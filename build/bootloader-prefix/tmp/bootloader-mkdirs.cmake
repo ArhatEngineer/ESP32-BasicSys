@@ -1,27 +1,27 @@
 # Distributed under the OSI-approved BSD 3-Clause License.  See accompanying
-# file LICENSE.rst or https://cmake.org/licensing for details.
+# file Copyright.txt or https://cmake.org/licensing for details.
 
-cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
+cmake_minimum_required(VERSION 3.5)
 
 # If CMAKE_DISABLE_SOURCE_CHANGES is set to true and the source directory is an
 # existing directory in our source tree, calling file(MAKE_DIRECTORY) on it
 # would cause a fatal error, even though it would be a no-op.
-if(NOT EXISTS "/Users/neo/ESProjects/esp/esp-idf/components/bootloader/subproject")
-  file(MAKE_DIRECTORY "/Users/neo/ESProjects/esp/esp-idf/components/bootloader/subproject")
+if(NOT EXISTS "/home/neo/EMSysProjects/esp/esp-idf/components/bootloader/subproject")
+  file(MAKE_DIRECTORY "/home/neo/EMSysProjects/esp/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/Users/neo/ESProjects/ESP32-BasicSys/build/bootloader"
-  "/Users/neo/ESProjects/ESP32-BasicSys/build/bootloader-prefix"
-  "/Users/neo/ESProjects/ESP32-BasicSys/build/bootloader-prefix/tmp"
-  "/Users/neo/ESProjects/ESP32-BasicSys/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/neo/ESProjects/ESP32-BasicSys/build/bootloader-prefix/src"
-  "/Users/neo/ESProjects/ESP32-BasicSys/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/neo/EMSysProjects/ESP32-BasicSys/build/bootloader"
+  "/home/neo/EMSysProjects/ESP32-BasicSys/build/bootloader-prefix"
+  "/home/neo/EMSysProjects/ESP32-BasicSys/build/bootloader-prefix/tmp"
+  "/home/neo/EMSysProjects/ESP32-BasicSys/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/neo/EMSysProjects/ESP32-BasicSys/build/bootloader-prefix/src"
+  "/home/neo/EMSysProjects/ESP32-BasicSys/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/neo/ESProjects/ESP32-BasicSys/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/neo/EMSysProjects/ESP32-BasicSys/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/neo/ESProjects/ESP32-BasicSys/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/neo/EMSysProjects/ESP32-BasicSys/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
